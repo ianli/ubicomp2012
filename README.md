@@ -13,8 +13,6 @@ ubicomp2012/
     # Layout with example content
   images/
     # Image files
-  javascripts/
-    # Javascript files
   stylesheets/
     # Stylesheets
 ```
