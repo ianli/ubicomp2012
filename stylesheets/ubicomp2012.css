@@ -10,7 +10,7 @@ body {
 }
 
 header {
-  margin-top: 20px;
+  margin: 20px 0 10px;
 }
 
 #header-subtitle {
@@ -20,3 +20,31 @@ header {
   font-family: 'Questrial', sans-serif;
   color: #fff;
 }
+
+ul#navbar {
+  clear:both;
+  display:block;
+  margin:0;
+  padding:0;
+  height:30px;
+  list-style:none;
+  background-color:#ccc;
+}
+  ul#navbar > li {
+    float:left;
+  }
+  ul#navbar > li > a {
+    display:block;
+    padding:8px 10px;
+    line-height:14px;
+    font-size:14px;
+    border-right:2px solid #222;
+    font-family: 'Questrial', sans-serif;
+    text-decoration:none;
+    text-transform:uppercase;
+    color:#222;
+  }
+  ul#navbar > li > a:hover,
+  ul#navbar > li > a.active {
+    background-color:#ff0;
+  }
