@@ -157,16 +157,16 @@ ul#navbar {
 
 /* News (Sidebar)
  * ============== */
-#news ul {
+ul#news  {
   list-style:none;
   margin:0 0 20px;
   padding:0;
 }
-#news ul > li {
+ul#news  > li {
   margin-bottom:12px;
   line-height:1.3em;
 }
-  #news ul > li > .date {
+  ul#news > li > .date {
     font-size:11px;
     color:#999;
   }
