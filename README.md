@@ -4,6 +4,20 @@ Ubicomp 2012 Design and Layout by Ian Li
 This is the design and layout for the [Ubicomp 2012 web site](http://www.ubicomp.org/ubicomp2012/). 
 A preview of this design is at http://ianli.github.com/ubicomp2012/
 
+Structure
+---------
+
+```ubicomp2012/
+  index.html
+    # Layout with example content
+  images/
+    # Image files
+  javascripts/
+    # Javascript files
+  stylesheets/
+    # Stylesheets
+```
+
 Colophon
 --------
 
