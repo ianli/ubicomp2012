@@ -6,25 +6,33 @@
  
 html,
 body {
-  background-color: #222;
+  background-color: #111;
+  background:#111 url(../images/bg-stripes.png) center top;
 }
 
+/* Header
+ * ====== */
 header {
   margin: 20px 0 10px;
+  height:160px;
 }
-
+#header-logo {
+  margin-left:-20px;
+}
 #header-subtitle {
-  padding-top:70px;
+  padding-top:90px;
   line-height: 20px;
   font-size: 16px;
   font-family: 'Questrial', sans-serif;
   color: #fff;
 }
 
+/* Navigation Bar
+ * ============== */
 ul#navbar {
   clear:both;
   display:block;
-  margin:0;
+  margin:0 -20px 10px;
   padding:0;
   height:30px;
   list-style:none;
@@ -35,16 +43,49 @@ ul#navbar {
   }
   ul#navbar > li > a {
     display:block;
-    padding:8px 10px;
+    padding:8px 15px;
     line-height:14px;
     font-size:14px;
-    border-right:2px solid #222;
+    border-right:1px solid #111;
     font-family: 'Questrial', sans-serif;
     text-decoration:none;
     text-transform:uppercase;
-    color:#222;
+    color:#111;
   }
   ul#navbar > li > a:hover,
   ul#navbar > li > a.active {
     background-color:#ff0;
   }
+
+/* Content Wrap
+ * ============ */
+#content-wrap {
+  margin:0 -20px 10px;
+  padding:20px;
+  min-height:400px;
+  background-color:#fff;
+}
+
+/* Footer
+ * ====== */
+footer {
+  margin:0 -20px 20px;
+  padding:20px;
+  background:#333;
+  color:#999;
+}
+
+/* Clearfix
+ * ========
+ * Make the elements wrap around their content.
+ */
+header:after,
+footer:after,
+#content-wrap:after {
+ content:"\0020";
+ display:block;
+ height:0;
+ clear:both;
+ visibility:hidden;
+ overflow:hidden;
+}
