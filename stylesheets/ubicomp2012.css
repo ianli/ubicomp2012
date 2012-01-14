@@ -1,0 +1,22 @@
+/**
+ * Ubicomp 2012 Stylesheet
+ *
+ *
+ */
+ 
+html,
+body {
+  background-color: #222;
+}
+
+header {
+  margin-top: 20px;
+}
+
+#header-subtitle {
+  padding-top:70px;
+  line-height: 20px;
+  font-size: 16px;
+  font-family: 'Questrial', sans-serif;
+  color: #fff;
+}
