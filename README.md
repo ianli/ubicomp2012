@@ -1,5 +1,5 @@
-Ubicomp 2012 Stylesheet by Ian Li
-=================================
+Ubicomp 2012 Stylesheet <small>by Ian Li</small>
+================================================
 
 This is the stylesheet for the Ubicomp 2012 web site.
 
