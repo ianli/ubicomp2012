@@ -8,6 +8,33 @@ html,
 body {
   background-color: #111;
   background:#111 url(../images/bg-stripes.png) center top;
+  color:#111;
+}
+
+a {
+  color:#E55713;
+}
+a:hover {
+  color:#AC410E; 
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom:15px;
+  line-height:1em;
+  font-family: 'Questrial', sans-serif;
+}
+h2 { font-size:32px; }
+h3 { font-size:25px; }
+h4 { font-size:20px; }
+h5 { font-size:16px; }
+h6 { font-size:13px; }
+
+/* Blueprint Override
+ * ================== */
+.notice {
+  background:#ffc;
+  color:#111;
+  border-color:#ff0;
 }
 
 /* Header
@@ -19,13 +46,39 @@ header {
 #header-logo {
   margin-left:-20px;
 }
+#header-news {
+  height:80px;
+}
 #header-subtitle {
-  padding-top:90px;
-  line-height: 20px;
+  line-height:25px;
   font-size: 16px;
   font-family: 'Questrial', sans-serif;
   color: #fff;
 }
+#header-social {
+  padding-top:5px;
+  font-size:14px;
+  font-family: 'Questrial', sans-serif;
+  color:#fff;
+  white-space:nowrap;
+}
+  #header-social a {
+    display:block;
+    clear:both;
+    color:#fff;
+    text-decoration:none;
+  }
+    #header-social a:hover {
+      text-decoration:underline;
+    }
+  #header-social img {
+    float:left;
+    margin-right:10px;
+  }
+  #header-social p {
+    margin:0;
+    padding:5px 0 10px;
+  }
 
 /* Navigation Bar
  * ============== */
@@ -74,6 +127,8 @@ footer {
   background:#333;
   color:#999;
 }
+  footer a { color:#ff0; }
+  footer a:hover { color:#E55713; }
 
 /* Clearfix
  * ========
