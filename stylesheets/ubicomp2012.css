@@ -22,6 +22,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom:15px;
   line-height:1em;
   font-family: 'Questrial', sans-serif;
+  font-weight:normal;
 }
 h2 { font-size:32px; }
 h3 { font-size:25px; }
@@ -89,12 +90,13 @@ ul#navbar {
   padding:0;
   height:30px;
   list-style:none;
-  background-color:#ccc;
+  background-color:#fff;
 }
   ul#navbar > li {
+    position:relative;
     float:left;
   }
-  ul#navbar > li > a {
+  ul#navbar > li a {
     display:block;
     padding:8px 15px;
     line-height:14px;
@@ -105,10 +107,32 @@ ul#navbar {
     text-transform:uppercase;
     color:#111;
   }
-  ul#navbar > li > a:hover,
-  ul#navbar > li > a.active {
+  ul#navbar > li a:hover,
+  ul#navbar > li a.active {
     background-color:#ff0;
   }
+  
+  /* Navigation Menu */
+  ul#navbar > li > ul {
+    display:none;
+  }
+  ul#navbar > li:hover > ul {
+    display:block;
+    position:absolute;
+    margin:0;
+    padding:0;
+    list-style:none;
+    border-top:1px solid #111;
+    background-color:#eee;
+    -webkit-box-shadow:4px 4px 0px rgba(0,0,0,0.2);
+  }
+    ul#navbar > li > ul > li {
+    }
+      ul#navbar > li > ul > li > a {
+        border-right:none;
+        border-bottom:1px solid #111;
+        white-space:nowrap;
+      }
 
 /* Content Wrap
  * ============ */
@@ -127,8 +151,14 @@ footer {
   background:#333;
   color:#999;
 }
-  footer a { color:#ff0; }
-  footer a:hover { color:#E55713; }
+  footer > div > p:last-child { margin-bottom:0;padding-bottom:0; }
+  footer a { color:#ddd; text-decoration:none; }
+  footer a:hover { color:#777; }
+  footer h6 {
+    margin-bottom:5px;
+    color:#777;
+    font-weight:bold;
+  }
 
 /* Clearfix
  * ========
