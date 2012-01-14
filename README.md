@@ -7,7 +7,8 @@ A preview of this design is at http://ianli.github.com/ubicomp2012/
 Structure
 ---------
 
-```ubicomp2012/
+```text
+ubicomp2012/
   index.html
     # Layout with example content
   images/
